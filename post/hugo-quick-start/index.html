@@ -142,8 +142,14 @@
         <li><a href="#maupassant">maupassant</a></li>
       </ul>
     </li>
-    <li><a href="#部署">部署</a></li>
+    <li><a href="#部署">部署</a>
+      <ul>
+        <li><a href="#本地">本地</a></li>
+        <li><a href="#travis">Travis</a></li>
+      </ul>
+    </li>
     <li><a href="#技巧">技巧</a></li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
     </div>
@@ -220,14 +226,61 @@ hugo server -D
 <h3 id="maupassant">maupassant</h3>
 <p><a href="https://github.com/flysnow-org/maupassant-hugo">maupassant</a>是一款国人做的主题, 提供中文文档, 相对好配置一些. <a href="https://github.com/flysnow-org/maupassant-hugo/blob/master/exampleSite/config.toml">example site</a>里也有比较完整的config.toml文件. 我参照作者给的建议做了一些调整.</p>
 <h2 id="部署">部署</h2>
+<h3 id="本地">本地</h3>
 <p>编译完成后, hugo会在public目录生成静态文件, 将静态文件推到GitHub上去就可以了.</p>
-<h2 id="技巧">技巧</h2>
+<h3 id="travis">Travis</h3>
+<p>第一次使用Travis, 折腾了很久, 主要有以下几个步骤:</p>
+<ul>
+<li>申请<a href="https://github.com/settings/tokens">token</a></li>
+<li><a href="travis-ci.com">Travis</a>上申请账号</li>
+<li>填写token值及其他环境变量</li>
+<li>完成Travis配置文件</li>
+</ul>
+<p>这里贴一下我的<a href="https://github.com/wmpluto/banyunlai-blog/blob/master/.travis.yml">配置文件</a>, 参考了很多别人的成果, 还行&hellip; 😄</p>
+<pre><code>dist: xenial
+os: linux
+language: shell
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get -yq install apt-transport-https
+
+# Install Hugo
+install:
+  # install latest hugo release version
+  - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*&quot;([^&quot;]*)&quot;.*@\1@g;p;q}}' | xargs wget
+  - sudo dpkg -i hugo*.deb
+  - rm hugo*.deb
+  - rm -rf public 2&gt; /dev/null
+
+before_script:
+  - git config --global user.email $GITHUB_EMAIL
+  - git config --global user.name $GITHUB_USERNAME
+  - git clone -b master https://$GITHUB_TOKEN@github.com/wmpluto/wmpluto.github.io.git public
+
+script:
+  - hugo
+  - echo 'banyunlai.com' &gt; public/CNAME
+
+# Deploy to GitHub pages
+after_success:
+  - cd public
+  - git add -A
+  - git commit -m &quot;rebuilding site, commit ${TRAVIS_COMMIT:0:6} and job ${TRAVIS_JOB_NUMBER}&quot; || true
+  - git push origin master
+</code></pre><h2 id="技巧">技巧</h2>
 <pre><code>新建文章: hugo new post/my-first-post.md
 本地预览: hugo server -D
 编译: hugo -D
 使能表情: enableemoji: true
 表情参考: https://www.webfx.com/tools/emoji-cheat-sheet/
 </code></pre>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://blog.csdn.net/u014291497/article/details/80879319">使用Travis自动构建并发布Hugo</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/59587169">使用github,hugo,travis打造个人博客</a></li>
+<li><a href="https://www.sidorenko.io/post/2018/12/hugo-on-github-pages-with-travis-ci/">Hugo on GitHub Pages with Travis CI</a></li>
+</ul>
         </div>
 
         
@@ -265,6 +318,8 @@ hugo server -D
             <ul class="clearfix">
                 
                 <li><a href='https://banyunlai.com/tags/hugo'>Hugo</a></li>
+                
+                <li><a href='https://banyunlai.com/tags/travis'>travis</a></li>
                 
             </ul>
             
@@ -336,6 +391,8 @@ hugo server -D
     <a href="https://banyunlai.com/tags/hugo/">Hugo</a>
     
     <a href="https://banyunlai.com/tags/to-do/">to-do</a>
+    
+    <a href="https://banyunlai.com/tags/travis/">travis</a>
     
     <a href="https://banyunlai.com/tags/%E7%A7%9F%E6%88%BF/">租房</a>
     

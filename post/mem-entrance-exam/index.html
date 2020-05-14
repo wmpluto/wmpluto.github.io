@@ -91,6 +91,100 @@
         
         <div class="post-content">
             <p>管理类联考考试科目：包括“管理类联考综合能力”与“英语二”两科，总分300分。</p>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+
+  #timer {
+    color: #F6F4F3;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: .7em;
+    letter-spacing: 5px;
+  }
+
+  .cdtitle {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #6E7173;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    display: inline-block;
+    padding: 20px;
+    width: 120px;
+    border-radius: 5px;
+  }
+
+  .days {
+    background: #EF2F3C;
+  }
+
+  .hours {
+    background: #F6F4F3;
+    color: #183059;
+  }
+
+  .minutes {
+    background: #276FBF;
+  }
+
+  .seconds {
+    background: #F0A202;
+  }
+
+  .numbers {
+    font-family: "Montserrat", sans-serif;
+    color: #183059;
+    font-size: 5em;
+  }
+</style>
+
+
+<div display="inline-block">
+  <p class="cdtitle">距管理类联考还有</p>
+  <div id="timer"></div>
+  <p></p>
+</div>
+
+
+<script>
+  function display() {
+    const today = new Date().getTime();
+    const diff = targetDate - today;
+
+    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML =
+      "<div class=\"days\"> \
+        <div class=\"numbers\">" + days + "</div>days</div> \
+      <div class=\"hours\"> \
+        <div class=\"numbers\">" + hours + "</div>hours</div> \
+      <div class=\"minutes\"> \
+        <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+      <div class=\"seconds\"> \
+        <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+      </div>";
+  }
+
+  var inputDate = "2020-12-19 8:30:00";
+  const targetDate = new Date(inputDate.replace(/\-/g, "/")).getTime();
+
+  display();
+  if (!"") {
+    let timer = setInterval("display()", 1000);
+  }
+</script>
 <h2 id="全国管理类联考">全国管理类联考</h2>
 <p>管理类联考综合能力，卷面结构：数学、逻辑推理、写作（论证有效性分析、论说文），共三大部分。满分为200分。分值分布：</p>
 <ul>
@@ -110,7 +204,7 @@
 </ul>
 <h2 id="分数线">分数线</h2>
 <p>我自己今天粗略过了一遍2019全国管理类联考的试卷, 粗略估计能拿105分这样. 假定英语二拿60分, 总分估计在165分. 这个分数在2019年是连国家线都过不了的, 更遑论去和别人PK拿录取资格了. 而且看起来分数线是逐年增高的, 到明年要考个好学校, 预测分数要在 后面一段时间要好好努力了.</p>
-<h2 id="2020">2020</h2>
+<h3 id="2020">2020</h3>
 <table>
 <thead>
 <tr>
@@ -153,7 +247,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="2019">2019</h2>
+<h3 id="2019">2019</h3>
 <table>
 <thead>
 <tr>
@@ -268,6 +362,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://banyunlai.com/post/mem-count-down/" title="2021年研究生入学考试倒计时">2021年研究生入学考试倒计时</a>
+    </li>
+    
+    <li>
         <a href="https://banyunlai.com/post/mem-entrance-exam/" title="管理类联考">管理类联考</a>
     </li>
     
@@ -296,7 +394,7 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="https://banyunlai.com/categories/2020/">2020 (4)</a></li>
+    <li><a href="https://banyunlai.com/categories/2020/">2020 (5)</a></li>
     
     <li><a href="https://banyunlai.com/categories/mem/">MEM (2)</a></li>
     

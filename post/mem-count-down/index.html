@@ -92,7 +92,7 @@
 <style>
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
 
-  #timer {
+  #cd-timer {
     color: #F6F4F3;
     text-align: center;
     text-transform: uppercase;
@@ -101,7 +101,7 @@
     letter-spacing: 5px;
   }
 
-  .cdtitle {
+  .cd-title {
     font-family: "Lato", sans-serif;
     text-align: center;
     margin-top: 2em;
@@ -147,8 +147,8 @@
 
 
 <div display="inline-block">
-  <p class="cdtitle">距2021年研究生入学考试还有</p>
-  <div id="timer"></div>
+  <p class="cd-title">距2021年研究生入学考试还有</p>
+  <div id="cd-timer"></div>
   <p></p>
 </div>
 
@@ -163,7 +163,12 @@
     let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-    document.getElementById("timer").innerHTML =
+    if (days < 0) days = 0;
+    if (hours < 0) hours = 0;
+    if (minutes < 0) minutes = 0;
+    if (seconds < 0) seconds = 0;
+
+    document.getElementById("cd-timer").innerHTML =
       "<div class=\"days\"> \
         <div class=\"numbers\">" + days + "</div>days</div> \
       <div class=\"hours\"> \

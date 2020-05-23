@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 伴云来</title>
+    <link>https://banyunlai.com/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 23 May 2020 00:13:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://banyunlai.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>记录好用的工具</title>
+      <link>https://banyunlai.com/tool/</link>
+      <pubDate>Sat, 23 May 2020 00:13:01 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/tool/</guid>
+      <description>工作 HTerm 简洁灵活的串口工具. PuTTY 既可以做ssh工具又可当串口工具. 当串口命令行需要交互时建议用. 个人 Ventoy 新发现的启动U盘制作工具, 有了Ventoy你就无需反复地格式化U盘, 你只需要把ISO文件拷贝到U盘里面就可以启动了, 无需其他操作. Rufus 系统盘制作工具. 在发现Ventoy之前, 我通常用它</description>
+    </item>
+    
+  </channel>
+</rss>

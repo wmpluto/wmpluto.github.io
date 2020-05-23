@@ -3,116 +3,133 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://banyunlai.com/categories/2020/</loc>
-    <lastmod>2020-05-22T21:35:50+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://banyunlai.com/categories/</loc>
-    <lastmod>2020-05-22T21:35:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/categories/mem/</loc>
-    <lastmod>2020-05-22T21:35:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/</loc>
-    <lastmod>2020-05-22T21:35:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/2020-government-work-report/</loc>
-    <lastmod>2020-05-22T21:35:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/exam-experience/</loc>
-    <lastmod>2020-05-18T23:19:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/mem-count-down/</loc>
-    <lastmod>2020-05-14T21:28:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/tags/mem/</loc>
-    <lastmod>2020-05-07T20:27:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/tags/</loc>
-    <lastmod>2020-05-07T20:27:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/mem-entrance-exam/</loc>
-    <lastmod>2020-05-07T20:27:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/mem-archive/</loc>
-    <lastmod>2020-05-06T22:56:24+08:00</lastmod>
+    <lastmod>2020-05-23T23:48:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://banyunlai.com/categories/%E4%B8%AA%E4%BA%BA/</loc>
-    <lastmod>2020-05-06T22:56:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/tags/%E7%A7%9F%E6%88%BF/</loc>
-    <lastmod>2020-05-05T12:21:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/renting-problems/</loc>
-    <lastmod>2020-05-05T12:21:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/tags/hugo/</loc>
-    <lastmod>2020-05-05T00:21:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/tags/travis/</loc>
-    <lastmod>2020-05-05T00:21:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/post/hugo-quick-start/</loc>
-    <lastmod>2020-05-05T00:21:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://banyunlai.com/tags/to-do/</loc>
-    <lastmod>2020-05-05T00:13:01+08:00</lastmod>
+    <lastmod>2020-05-23T23:48:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://banyunlai.com/</loc>
-    <lastmod>2020-05-05T00:13:01+08:00</lastmod>
+    <lastmod>2020-05-23T23:48:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/book/</loc>
+    <lastmod>2020-05-23T23:48:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tags/</loc>
+    <lastmod>2020-05-24T00:18:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-05-23T21:41:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tool/</loc>
+    <lastmod>2020-05-23T21:41:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/categories/2020/</loc>
+    <lastmod>2020-05-23T22:12:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/categories/mem/</loc>
+    <lastmod>2020-05-22T23:26:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/</loc>
+    <lastmod>2020-05-24T00:18:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/2020-government-work-report/</loc>
+    <lastmod>2020-05-22T23:26:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/exam-experience/</loc>
+    <lastmod>2020-05-18T23:40:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/mem-count-down/</loc>
+    <lastmod>2020-05-17T23:02:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tags/mem/</loc>
+    <lastmod>2020-05-17T23:02:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/mem-entrance-exam/</loc>
+    <lastmod>2020-05-15T00:10:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/mem-archive/</loc>
+    <lastmod>2020-05-17T23:02:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tags/%E7%A7%9F%E6%88%BF/</loc>
+    <lastmod>2020-05-06T12:20:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/renting-problems/</loc>
+    <lastmod>2020-05-06T12:20:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tags/hugo/</loc>
+    <lastmod>2020-05-24T00:18:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tags/travis/</loc>
+    <lastmod>2020-05-24T00:18:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/post/hugo-quick-start/</loc>
+    <lastmod>2020-05-24T00:18:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://banyunlai.com/tags/to-do/</loc>
+    <lastmod>2020-05-23T22:12:17+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://banyunlai.com/about/</loc>
-    <lastmod>2020-05-05T00:13:01+08:00</lastmod>
+    <lastmod>2020-05-05T13:23:52+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://banyunlai.com/post/my-first-post/</loc>
-    <lastmod>2020-05-04T21:38:19+08:00</lastmod>
+    <lastmod>2020-05-23T22:12:17+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://banyunlai.com/archive/</loc>
+    <lastmod>2020-05-05T00:12:04+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://banyunlai.com/search/</loc>
+    <lastmod>2020-05-05T13:23:52+08:00</lastmod>
   </url>
   
 </urlset>

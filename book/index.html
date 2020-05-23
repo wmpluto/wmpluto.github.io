@@ -6,22 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MEM | 伴云来</title>
-    <meta property="og:title" content="MEM - 伴云来">
+    <title>读书 | 伴云来</title>
+    <meta property="og:title" content="读书 - 伴云来">
     <meta property="og:type" content="article">
         
+    <meta property="article:published_time" content='2020-05-23T21:42:25&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2020-05-23T23:48:40&#43;08:00'>
         
     <meta name="Keywords" content="嵌入式, 单片机">
-    <meta name="description" content="MEM">
+    <meta name="description" content="读书">
         
     <meta name="author" content="Pluto Wang">
-    <meta property="og:url" content="https://banyunlai.com/categories/mem/">
+    <meta property="og:url" content="https://banyunlai.com/book/">
     
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
-    <link rel="alternate" type="application/rss+xml+xml" href="https://banyunlai.com/categories/mem/index.xml" title="伴云来" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -52,7 +55,7 @@
                     
                     <a  href="https://banyunlai.com/tool/" title="工具">工具</a>
                     
-                    <a  href="https://banyunlai.com/book/" title="读书">读书</a>
+                    <a class="current" href="https://banyunlai.com/book/" title="读书">读书</a>
                     
                     <a  href="https://banyunlai.com/archive/" title="归档">归档</a>
                     
@@ -71,149 +74,179 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    
-    <h3 class="archive-title">
-        分类
-        <span class="keyword">MEM</span>
-        中的文章
-    </h3>
-    
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 
-    
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#已读">已读</a></li>
+    <li><a href="#待读">待读</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
     <article class="post">
         <header>
-            <h1 class="post-title">
-                <a href="https://banyunlai.com/post/2020-government-work-report/">政府工作报告</a>
-            </h1>
+            <h1 class="post-title">读书</h1>
         </header>
         <date class="post-meta meta-date">
-            2020年5月22日
+            2020年5月23日
         </date>
         
-        <div class="post-meta meta-category">
-            |
+        <div class="post-meta">
+            <span>|</span>
             
-            <a href='https://banyunlai.com/categories/2020'>2020</a>
-            
-            <a href='https://banyunlai.com/categories/mem'>MEM</a>
+            <span class="meta-category"><a href='https://banyunlai.com/categories/%E4%B8%AA%E4%BA%BA'>个人</a></span>
             
         </div>
         
+        
+        
         <div class="post-content">
-            <p>标注一下我眼里的政府工作报告, 以下为正文:</p>……
-            <p class="readmore"><a href="https://banyunlai.com/post/2020-government-work-report/">阅读全文</a></p>
+            <h2 id="已读">已读</h2>
+<ul>
+<li><a href="https://item.jd.com/10072804.html">大唐双龙传 - 黄易</a><br>
+应该是我读过最长且次数最多的一套书. 大一这样读完一遍, 从学校离开后的那几年, 每年都会看至少一遍, 一直到2017跳槽到新的公司才没有继续看了. 不知道为什么, 纯粹打发时间, 还是想找到一些寄托?</li>
+</ul>
+<h2 id="待读">待读</h2>
+<ul>
+<li><a href="https://book.douban.com/subject/1014173/">红楼梦诗词曲赋鉴赏 - </a></li>
+</ul>
+
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/tool/">记录好用的工具</a></li>
+        
+        <li><a href="/post/2020-government-work-report/">政府工作报告</a></li>
+        
+        <li><a href="/post/exam-experience/">管理学联考考经整理</a></li>
+        
+        <li><a href="/post/mem-count-down/">2021年研究生入学考试倒计时</a></li>
+        
+        <li><a href="/post/mem-entrance-exam/">管理类联考</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            没有标签
+            
         </div>
     </article>
     
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://banyunlai.com/post/exam-experience/">管理学联考考经整理</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2020年5月18日
-        </date>
-        
-        <div class="post-meta meta-category">
-            |
-            
-            <a href='https://banyunlai.com/categories/2020'>2020</a>
-            
-            <a href='https://banyunlai.com/categories/mem'>MEM</a>
-            
-        </div>
-        
-        <div class="post-content">
-            <p>从网上整理了一些别人的考经. 记好, 看了要照做👊</p>……
-            <p class="readmore"><a href="https://banyunlai.com/post/exam-experience/">阅读全文</a></p>
-        </div>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://banyunlai.com/post/mem-count-down/">2021年研究生入学考试倒计时</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2020年5月14日
-        </date>
-        
-        <div class="post-meta meta-category">
-            |
-            
-            <a href='https://banyunlai.com/categories/2020'>2020</a>
-            
-            <a href='https://banyunlai.com/categories/mem'>MEM</a>
-            
-        </div>
-        
-        <div class="post-content">
-            <p>2021年研究生入学考试倒计时</p>……
-            <p class="readmore"><a href="https://banyunlai.com/post/mem-count-down/">阅读全文</a></p>
-        </div>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://banyunlai.com/post/mem-entrance-exam/">管理类联考</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2020年5月7日
-        </date>
-        
-        <div class="post-meta meta-category">
-            |
-            
-            <a href='https://banyunlai.com/categories/2020'>2020</a>
-            
-            <a href='https://banyunlai.com/categories/mem'>MEM</a>
-            
-        </div>
-        
-        <div class="post-content">
-            <p>管理类联考考试科目：包括“管理类联考综合能力”与“英语二”两科，总分300分。</p>……
-            <p class="readmore"><a href="https://banyunlai.com/post/mem-entrance-exam/">阅读全文</a></p>
-        </div>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://banyunlai.com/post/mem-archive/">上海MEM院校资料整理</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2020年5月6日
-        </date>
-        
-        <div class="post-meta meta-category">
-            |
-            
-            <a href='https://banyunlai.com/categories/2020'>2020</a>
-            
-            <a href='https://banyunlai.com/categories/mem'>MEM</a>
-            
-            <a href='https://banyunlai.com/categories/%E4%B8%AA%E4%BA%BA'>个人</a>
-            
-        </div>
-        
-        <div class="post-content">
-            <p>整理自己感兴趣的上海MEM(工程管理硕士)院校，为后面报考做准备。目前考虑参加预选的院校有: 交大, 复旦, 华理, 东华.</p>……
-            <p class="readmore"><a href="https://banyunlai.com/post/mem-archive/">阅读全文</a></p>
-        </div>
-    </article>
     
 
     
-
-
-
-
-
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "wmpluto/utterances"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
 </div>
 
                 </div>
@@ -322,6 +355,17 @@
     </div>
 </footer>
 
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 <a id="rocket" href="#top"></a>

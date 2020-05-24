@@ -6,18 +6,27 @@
     <description>Recent content in 个人 on 伴云来</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 23 May 2020 21:42:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 21:15:25 +0800</lastBuildDate>
     
 	<atom:link href="https://banyunlai.com/categories/%E4%B8%AA%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>读书</title>
+      <title>做菜清单</title>
+      <link>https://banyunlai.com/food/menu/</link>
+      <pubDate>Sun, 24 May 2020 21:15:25 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/food/menu/</guid>
+      <description>&lt;p&gt;列个家常菜的清单, 目标是做会, 做熟.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>读书清单</title>
       <link>https://banyunlai.com/book/</link>
       <pubDate>Sat, 23 May 2020 21:42:25 +0800</pubDate>
       
       <guid>https://banyunlai.com/book/</guid>
-      <description>已读 大唐双龙传 - 黄易 应该是我读过最长且次数最多的一套书. 大一这样读完一遍, 从学校离开后的那几年, 每年都会看至少一遍, 一直到2017跳槽到新的公司才没有继续看了. 不知道为什么, 纯粹打发时间, 还是想找到一些寄托? 待读 红楼梦诗词曲赋鉴赏 -</description>
+      <description>已读清单 大唐双龙传 - 黄易 应该是我读过最长且次数最多的一套书. 大一这样读完一遍, 从学校离开后的那几年, 每年都会看至少一遍, 一直到2017跳槽到新的公司才没有继续看了. 不知道为什么, 纯粹打发时间, 还是想找到一些寄托? 待读清单 红楼梦诗词曲赋鉴赏 -</description>
     </item>
     
     <item>

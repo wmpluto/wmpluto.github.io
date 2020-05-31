@@ -6,10 +6,28 @@
     <description>Recent content in Tags on 伴云来</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 23 May 2020 00:13:01 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 22:29:17 +0800</lastBuildDate>
     
 	<atom:link href="https://banyunlai.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>linux</title>
+      <link>https://banyunlai.com/tags/linux/</link>
+      <pubDate>Sat, 30 May 2020 22:29:17 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberrypi</title>
+      <link>https://banyunlai.com/tags/raspberrypi/</link>
+      <pubDate>Sat, 30 May 2020 22:29:17 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/tags/raspberrypi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>工具</title>

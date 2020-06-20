@@ -6,10 +6,28 @@
     <description>Recent content in Tags on 伴云来</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 30 May 2020 22:29:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 22:02:09 +0800</lastBuildDate>
     
 	<atom:link href="https://banyunlai.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>8266</title>
+      <link>https://banyunlai.com/tags/8266/</link>
+      <pubDate>Tue, 02 Jun 2020 22:02:09 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/tags/8266/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>micropython</title>
+      <link>https://banyunlai.com/tags/micropython/</link>
+      <pubDate>Tue, 02 Jun 2020 22:02:09 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/tags/micropython/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>

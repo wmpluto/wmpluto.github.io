@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>记录好用的工具 | 伴云来</title>
-    <meta property="og:title" content="记录好用的工具 - 伴云来">
+    <title>Esp8266 Micropython | 伴云来</title>
+    <meta property="og:title" content="Esp8266 Micropython - 伴云来">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2020-05-23T00:13:01&#43;08:00'>
+    <meta property="article:published_time" content='2020-06-02T22:02:09&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2020-05-31T14:13:57&#43;08:00'>
+    <meta property="article:modified_time" content='2020-06-20T21:54:33&#43;08:00'>
         
     <meta name="Keywords" content="嵌入式, 单片机">
-    <meta name="description" content="记录好用的工具">
+    <meta name="description" content="Esp8266 Micropython">
         
     <meta name="author" content="Pluto Wang">
-    <meta property="og:url" content="https://banyunlai.com/tool/">
+    <meta property="og:url" content="https://banyunlai.com/post/esp8266-micropython/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -48,13 +48,13 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://banyunlai.com">首页</a>
+                    <a class="current" href="https://banyunlai.com">首页</a>
                     
                     <a  href="https://banyunlai.com/book/" title="读书">读书</a>
                     
                     <a  href="https://banyunlai.com/food/" title="做菜">做菜</a>
                     
-                    <a class="current" href="https://banyunlai.com/tool/" title="工具">工具</a>
+                    <a  href="https://banyunlai.com/tool/" title="工具">工具</a>
                     
                     <a  href="https://banyunlai.com/archive/" title="归档">归档</a>
                     
@@ -76,42 +76,81 @@
     
     <article class="post">
         <header>
-            <h1 class="post-title">记录好用的工具</h1>
+            <h1 class="post-title">Esp8266 Micropython</h1>
         </header>
         <date class="post-meta meta-date">
-            2020年5月23日
+            2020年6月2日
         </date>
         
         <div class="post-meta">
             <span>|</span>
             
-            <span class="meta-category"><a href='https://banyunlai.com/categories/%E4%B8%AA%E4%BA%BA'>个人</a></span>
+            <span class="meta-category"><a href='https://banyunlai.com/categories/2020'>2020</a></span>
+            
+            <span class="meta-category"><a href='https://banyunlai.com/categories/%E5%BC%80%E5%8F%91%E6%9D%BF'>开发板</a></span>
             
         </div>
         
         
         
         <div class="post-content">
-            <h2 id="工作">工作</h2>
+            <p>我一直对micropython没什么好感, 但不得不承认, 从快速开发的角度来说, 还是真香.</p>
+<p>具体的一些操作, 参见<a href="https://github.com/wmpluto/ESP8266-Fan-Controller">我的工程</a></p>
+<h2 id="环境搭建">环境搭建</h2>
 <ul>
-<li><a href="http://www.der-hammer.info/pages/terminal.html">HTerm</a><br>
-简洁灵活的串口工具.</li>
-<li><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a><br>
-既可以做ssh工具又可当串口工具. 当串口命令行需要交互时建议用.</li>
+<li><a href="http://micropython.org/download/esp8266/">固件下载</a></li>
+<li>刷固件, 这里注意用好的线和注意U口性能.</li>
 </ul>
-<h2 id="个人">个人</h2>
+<pre><code>pip install esptool
+esptool.py --port COM8 erase_flash
+esptool.py --port COM8 --baud 460800 write_flash --flash_size=detect -fm=dio 0 esp8266-20191220-v1.12.bin
+</code></pre><ul>
+<li><a href="http://micropython.org/webrepl/">webrepl</a></li>
+</ul>
+<h2 id="wifi设置">WIFI设置</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">do_connect</span>():
+    <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">network</span>
+    sta_if <span style="color:#000;font-weight:bold">=</span> network<span style="color:#000;font-weight:bold">.</span>WLAN(network<span style="color:#000;font-weight:bold">.</span>STA_IF)
+    <span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> sta_if<span style="color:#000;font-weight:bold">.</span>isconnected():
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;connecting to network...&#39;</span>)
+        sta_if<span style="color:#000;font-weight:bold">.</span>active(<span style="color:#999">True</span>)
+        sta_if<span style="color:#000;font-weight:bold">.</span>connect(<span style="color:#d14">&#39;&lt;essid&gt;&#39;</span>, <span style="color:#d14">&#39;&lt;password&gt;&#39;</span>)
+        <span style="color:#000;font-weight:bold">while</span> <span style="color:#000;font-weight:bold">not</span> sta_if<span style="color:#000;font-weight:bold">.</span>isconnected():
+            <span style="color:#000;font-weight:bold">pass</span>
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;network config:&#39;</span>, sta_if<span style="color:#000;font-weight:bold">.</span>ifconfig())
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="esp8266-注意事项">ESP8266 注意事项</h2>
 <ul>
-<li><a href="https://www.ventoy.net/cn/index.html">Ventoy</a><br>
-新发现的启动U盘制作工具, 有了Ventoy你就无需反复地格式化U盘, 你只需要把ISO文件拷贝到U盘里面就可以启动了, 无需其他操作.</li>
-<li><a href="http://rufus.ie/">Rufus</a><br>
-系统盘制作工具. 在发现<a href="https://www.ventoy.net/cn/index.html">Ventoy</a>之前, 我通常用它制作Windows和Ubuntu的系统安装盘, 以及树莓派等的系统镜像盘.</li>
-<li><a href="https://en.wikipedia.org/wiki/W3m">w3m</a><br>
-命令行下的浏览器工具. 连接需要web验证的网络时会用到.</li>
+<li>WDT模块有问题</li>
 </ul>
-
         </div>
 
         
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://banyunlai.com">Pluto Wang</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://banyunlai.com/post/esp8266-micropython/">https://banyunlai.com/post/esp8266-micropython/</a></li>
+        <li style="word-break:break-all"><strong>上次更新：2020-06-20</li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
 
 
         
@@ -120,15 +159,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/rasberrypi-zero/">树莓派Zero 使用</a></li>
+        
+        <li><a href="/food/menu/">做菜清单</a></li>
+        
+        <li><a href="/book/">读书清单</a></li>
+        
+        <li><a href="/tool/">记录好用的工具</a></li>
+        
         <li><a href="/post/2020-government-work-report/">政府工作报告</a></li>
-        
-        <li><a href="/post/exam-experience/">管理学联考考经整理</a></li>
-        
-        <li><a href="/post/mem-count-down/">2021年研究生入学考试倒计时</a></li>
-        
-        <li><a href="/post/mem-entrance-exam/">管理类联考</a></li>
-        
-        <li><a href="/post/mem-archive/">上海MEM院校资料整理</a></li>
         
     </ul>
 </div>
@@ -138,7 +177,9 @@
             
             <ul class="clearfix">
                 
-                <li><a href='https://banyunlai.com/tags/%E5%B7%A5%E5%85%B7'>工具</a></li>
+                <li><a href='https://banyunlai.com/tags/8266'>8266</a></li>
+                
+                <li><a href='https://banyunlai.com/tags/micropython'>micropython</a></li>
                 
             </ul>
             

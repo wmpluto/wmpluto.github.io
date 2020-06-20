@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 伴云来</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 30 May 2020 22:29:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 22:02:09 +0800</lastBuildDate>
     
 	<atom:link href="https://banyunlai.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Esp8266 Micropython</title>
+      <link>https://banyunlai.com/post/esp8266-micropython/</link>
+      <pubDate>Tue, 02 Jun 2020 22:02:09 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/esp8266-micropython/</guid>
+      <description>&lt;p&gt;我一直对micropython没什么好感, 但不得不承认, 从快速开发的角度来说, 还是真香.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>树莓派Zero 使用</title>
@@ -62,7 +71,7 @@
       <pubDate>Wed, 06 May 2020 22:56:24 +0800</pubDate>
       
       <guid>https://banyunlai.com/post/mem-archive/</guid>
-      <description>&lt;p&gt;整理自己感兴趣的上海MEM(工程管理硕士)院校，为后面报考做准备。目前考虑参加预选的院校有: 交大, 复旦, 华理, 东华.&lt;/p&gt;</description>
+      <description>&lt;p&gt;整理自己感兴趣的上海MEM(工程管理硕士)院校，为后面报考做准备。目前考虑参加预选的院校有: 交大, 复旦, 华理, &lt;del&gt;东华&lt;/del&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

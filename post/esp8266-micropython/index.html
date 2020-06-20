@@ -13,7 +13,7 @@
     <meta property="article:published_time" content='2020-06-02T22:02:09&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2020-06-20T21:54:33&#43;08:00'>
+    <meta property="article:modified_time" content='2020-06-20T22:04:05&#43;08:00'>
         
     <meta name="Keywords" content="嵌入式, 单片机">
     <meta name="description" content="Esp8266 Micropython">
@@ -134,7 +134,23 @@ esptool.py --port COM8 --baud 460800 write_flash --flash_size=detect -fm=dio 0 e
     <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;network config:&#39;</span>, sta_if<span style="color:#000;font-weight:bold">.</span>ifconfig())
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="esp8266-注意事项">ESP8266 注意事项</h2>
+</div><h2 id="上传代码">上传代码</h2>
+<ul>
+<li>webrepl</li>
+</ul>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">webrepl_setup</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><a href="https://github.com/BetaRavener/uPyLoader">uPyLoader</a></li>
+<li><a href="https://github.com/scientifichackers/ampy">ampy</a></li>
+</ul>
+<h2 id="esp8266-注意事项">ESP8266 注意事项</h2>
 <ul>
 <li>WDT模块有问题</li>
 </ul>

@@ -6,11 +6,7 @@
     <description>Recent content in 8266 on 伴云来</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Jun 2020 22:02:09 +0800</lastBuildDate>
-    
-	<atom:link href="https://banyunlai.com/tags/8266/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Jun 2020 22:02:09 +0800</lastBuildDate><atom:link href="https://banyunlai.com/tags/8266/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Esp8266 Micropython</title>
       <link>https://banyunlai.com/post/esp8266-micropython/</link>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>to-do on 伴云来</title>
+    <link>https://banyunlai.com/tags/to-do/</link>
+    <description>Recent content in to-do on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 May 2022 00:13:01 +0800</lastBuildDate><atom:link href="https://banyunlai.com/tags/to-do/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于我</title>
+      <link>https://banyunlai.com/about/</link>
+      <pubDate>Thu, 05 May 2022 00:13:01 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/about/</guid>
+      <description>21260720063 MEM</description>
+    </item>
+    
+    <item>
+      <title>新的开始</title>
+      <link>https://banyunlai.com/post/my-first-post/</link>
+      <pubDate>Wed, 04 May 2022 21:38:19 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/my-first-post/</guid>
+      <description>&lt;p&gt;转眼间工作了六年, 仔细一想并没有什么东西留存下来. 无论是说金钱, 还是知识, 如流水般, 过去的都过去了, 什么都没留下来. 纠其原因, 这几年还是过得太散漫一些了. 到了现在, 发现自己穷得要死, 记性也变得很差. 悔不当初啊.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Foods on 伴云来</title>
+    <link>https://banyunlai.com/food/</link>
+    <description>Recent content in Foods on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 May 2022 21:15:25 +0800</lastBuildDate><atom:link href="https://banyunlai.com/food/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>做菜清单</title>
+      <link>https://banyunlai.com/food/menu/</link>
+      <pubDate>Tue, 24 May 2022 21:15:25 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/food/menu/</guid>
+      <description>&lt;p&gt;列个家常菜的清单, 目标是做会, 做熟.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

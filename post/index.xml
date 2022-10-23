@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 伴云来</title>
+    <link>https://banyunlai.com/post/</link>
+    <description>Recent content in Posts on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 15 Sep 2022 23:59:02 +0800</lastBuildDate><atom:link href="https://banyunlai.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>复旦MEM日程</title>
+      <link>https://banyunlai.com/post/%E5%A4%8D%E6%97%A6mem%E6%97%A5%E7%A8%8B/</link>
+      <pubDate>Thu, 15 Sep 2022 23:59:02 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/%E5%A4%8D%E6%97%A6mem%E6%97%A5%E7%A8%8B/</guid>
+      <description>&lt;p&gt;从零开始的复旦MEM历程.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Diy逻辑分析仪</title>
+      <link>https://banyunlai.com/post/diy_logic_analyzers/</link>
+      <pubDate>Wed, 31 Aug 2022 10:25:18 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/diy_logic_analyzers/</guid>
+      <description>&lt;p&gt;开个大坑, 看看后面有没有机会完成.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>邮件小抄</title>
+      <link>https://banyunlai.com/post/mail-cheat-sheet/</link>
+      <pubDate>Thu, 07 Jul 2022 11:12:13 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/mail-cheat-sheet/</guid>
+      <description>&lt;p&gt;摘抄日常邮件里有用的句子.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trojan 安装及使用记录</title>
+      <link>https://banyunlai.com/post/trojan-install/</link>
+      <pubDate>Sat, 02 Jul 2022 10:10:14 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/trojan-install/</guid>
+      <description>&lt;p&gt;常用的翻墙工具里, 我用过的有Shadowsocks, V2Ray和Trojan. V2Ray测试过后感觉并不好, 目前以Shadowsocks为主力, Trojan作为辅助. 这里记录一下Trojan的使用情况.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>拍牌</title>
+      <link>https://banyunlai.com/post/hupai/</link>
+      <pubDate>Thu, 30 Jun 2022 21:42:42 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/hupai/</guid>
+      <description>&lt;p&gt;帮朋友拍沪牌, 做个笔记:)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Esp8266 Micropython</title>
+      <link>https://banyunlai.com/post/esp8266-micropython/</link>
+      <pubDate>Thu, 02 Jun 2022 22:02:09 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/esp8266-micropython/</guid>
+      <description>&lt;p&gt;&lt;del&gt;我一直对micropython没什么好感, 但不得不承认, 从快速开发的角度来说, 还是真香.&lt;/del&gt; 还是不好用!!!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>树莓派Zero 使用</title>
+      <link>https://banyunlai.com/post/rasberrypi-zero/</link>
+      <pubDate>Mon, 30 May 2022 22:29:17 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/rasberrypi-zero/</guid>
+      <description>&lt;p&gt;折腾数莓派Zero W&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>政府工作报告</title>
+      <link>https://banyunlai.com/post/2020-government-work-report/</link>
+      <pubDate>Sun, 22 May 2022 21:35:50 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/2020-government-work-report/</guid>
+      <description>&lt;p&gt;标注一下我眼里的政府工作报告:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>管理学联考考经整理</title>
+      <link>https://banyunlai.com/post/exam-experience/</link>
+      <pubDate>Wed, 18 May 2022 23:19:51 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/exam-experience/</guid>
+      <description>&lt;p&gt;从网上整理了一些别人的考经. 记好, 看了要照做👊&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2021年研究生入学考试倒计时</title>
+      <link>https://banyunlai.com/post/mem-count-down/</link>
+      <pubDate>Sat, 14 May 2022 21:28:02 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/mem-count-down/</guid>
+      <description>&lt;p&gt;2021年研究生入学考试倒计时&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>管理类联考</title>
+      <link>https://banyunlai.com/post/mem-entrance-exam/</link>
+      <pubDate>Sat, 07 May 2022 20:27:07 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/mem-entrance-exam/</guid>
+      <description>&lt;p&gt;管理类联考考试科目：包括“管理类联考综合能力”与“英语二”两科，总分300分。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>上海MEM院校资料整理</title>
+      <link>https://banyunlai.com/post/mem-archive/</link>
+      <pubDate>Fri, 06 May 2022 22:56:24 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/mem-archive/</guid>
+      <description>&lt;p&gt;整理自己感兴趣的上海MEM(工程管理硕士)院校，为后面报考做准备。目前考虑参加预选的院校有: 交大, 复旦, 华理, &lt;del&gt;东华&lt;/del&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>租房问题</title>
+      <link>https://banyunlai.com/post/renting-problems/</link>
+      <pubDate>Thu, 05 May 2022 12:21:19 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/renting-problems/</guid>
+      <description>&lt;p&gt;这么多年第一次自己找房子, 经验还是不足, 在中介, 二房东和房东不断周旋, 耗费了太多心血, 结果找到的房子还是不满意.&lt;/p&gt;
+&lt;p&gt;本篇提醒自己记住这段傻逼, 痛苦的经历.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Hugo搭建博客</title>
+      <link>https://banyunlai.com/post/hugo-quick-start/</link>
+      <pubDate>Thu, 05 May 2022 00:21:17 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/hugo-quick-start/</guid>
+      <description>&lt;p&gt;工欲善其事, 必先利其器. 既然决定要开始记流水帐, 当然要先找到一款趁手的博客工具.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新的开始</title>
+      <link>https://banyunlai.com/post/my-first-post/</link>
+      <pubDate>Wed, 04 May 2022 21:38:19 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/my-first-post/</guid>
+      <description>&lt;p&gt;转眼间工作了六年, 仔细一想并没有什么东西留存下来. 无论是说金钱, 还是知识, 如流水般, 过去的都过去了, 什么都没留下来. 纠其原因, 这几年还是过得太散漫一些了. 到了现在, 发现自己穷得要死, 记性也变得很差. 悔不当初啊.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

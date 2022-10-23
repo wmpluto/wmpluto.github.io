@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>micropython on 伴云来</title>
+    <link>https://banyunlai.com/tags/micropython/</link>
+    <description>Recent content in micropython on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Jun 2022 22:02:09 +0800</lastBuildDate><atom:link href="https://banyunlai.com/tags/micropython/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Esp8266 Micropython</title>
+      <link>https://banyunlai.com/post/esp8266-micropython/</link>
+      <pubDate>Thu, 02 Jun 2022 22:02:09 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/esp8266-micropython/</guid>
+      <description>&lt;p&gt;&lt;del&gt;我一直对micropython没什么好感, 但不得不承认, 从快速开发的角度来说, 还是真香.&lt;/del&gt; 还是不好用!!!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

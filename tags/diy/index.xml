@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DIY on 伴云来</title>
+    <link>https://banyunlai.com/tags/diy/</link>
+    <description>Recent content in DIY on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 31 Aug 2022 10:25:18 +0800</lastBuildDate><atom:link href="https://banyunlai.com/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diy逻辑分析仪</title>
+      <link>https://banyunlai.com/post/diy_logic_analyzers/</link>
+      <pubDate>Wed, 31 Aug 2022 10:25:18 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/diy_logic_analyzers/</guid>
+      <description>&lt;p&gt;开个大坑, 看看后面有没有机会完成.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

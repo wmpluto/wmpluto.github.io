@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>翻墙 on 伴云来</title>
+    <link>https://banyunlai.com/tags/%E7%BF%BB%E5%A2%99/</link>
+    <description>Recent content in 翻墙 on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 02 Jul 2022 10:10:14 +0800</lastBuildDate><atom:link href="https://banyunlai.com/tags/%E7%BF%BB%E5%A2%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trojan 安装及使用记录</title>
+      <link>https://banyunlai.com/post/trojan-install/</link>
+      <pubDate>Sat, 02 Jul 2022 10:10:14 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/trojan-install/</guid>
+      <description>&lt;p&gt;常用的翻墙工具里, 我用过的有Shadowsocks, V2Ray和Trojan. V2Ray测试过后感觉并不好, 目前以Shadowsocks为主力, Trojan作为辅助. 这里记录一下Trojan的使用情况.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

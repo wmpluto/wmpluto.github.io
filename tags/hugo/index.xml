@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 伴云来</title>
+    <link>https://banyunlai.com/tags/hugo/</link>
+    <description>Recent content in Hugo on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 May 2022 00:21:17 +0800</lastBuildDate><atom:link href="https://banyunlai.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Hugo搭建博客</title>
+      <link>https://banyunlai.com/post/hugo-quick-start/</link>
+      <pubDate>Thu, 05 May 2022 00:21:17 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/hugo-quick-start/</guid>
+      <description>&lt;p&gt;工欲善其事, 必先利其器. 既然决定要开始记流水帐, 当然要先找到一款趁手的博客工具.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

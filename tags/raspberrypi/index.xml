@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>raspberrypi on 伴云来</title>
+    <link>https://banyunlai.com/tags/raspberrypi/</link>
+    <description>Recent content in raspberrypi on 伴云来</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 30 May 2022 22:29:17 +0800</lastBuildDate><atom:link href="https://banyunlai.com/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>树莓派Zero 使用</title>
+      <link>https://banyunlai.com/post/rasberrypi-zero/</link>
+      <pubDate>Mon, 30 May 2022 22:29:17 +0800</pubDate>
+      
+      <guid>https://banyunlai.com/post/rasberrypi-zero/</guid>
+      <description>&lt;p&gt;折腾数莓派Zero W&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

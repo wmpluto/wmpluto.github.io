@@ -16,17 +16,17 @@
 		.display {
             font-size: 50vw;
             text-align: center;
-			color: gray;			
+	    color: gray;			
         }
     </style>
 </head>
 <body>
     <h1>循环定时提醒</h1>
     <label for="repeatCount">循环次数:</label>
-    <input type="number" id="repeatCount" min="1" value="3">
+    <input type="number" id="repeatCount" min="1" value="99">
 
     <label for="intervalTime">间隔时间 (秒):</label>
-    <input type="number" id="intervalTime" min="10" max="600" value="60">
+    <input type="number" id="intervalTime" min="10" max="600" value="30">
 
     <button id="startButton">开始</button>
     <button id="stopButton" disabled>停止</button>
@@ -83,7 +83,7 @@
         function updateDisplay(number, color) {
             const display = document.getElementById('display');
             display.textContent = number.toString().padStart(2, '0');
-			display.style.color = color;
+	    display.style.color = color;
         }
 		
         function playBeep(times) {

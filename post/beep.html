@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环定时提醒</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+		.display {
+            font-size: 50vw;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>循环定时提醒</h1>
+    <label for="repeatCount">循环次数:</label>
+    <input type="number" id="repeatCount" min="1" value="3">
+
+    <label for="intervalTime">间隔时间 (秒):</label>
+    <input type="number" id="intervalTime" min="10" max="600" value="60">
+
+    <button id="startButton">开始</button>
+    <button id="stopButton" disabled>停止</button>
+	
+	<div id="status" style="margin-top: 20px; font-weight: bold;"></div>
+	<div class="display" id="display">00</div>
+	
+    <script>
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+		const statusDiv = document.getElementById('status');
+        let intervalId;
+        let currentCount = 0;
+
+        startButton.addEventListener('click', () => {
+            const repeatCount = parseInt(document.getElementById('repeatCount').value, 10);
+            const intervalTime = parseInt(document.getElementById('intervalTime').value, 10) * 1000;
+
+            if (isNaN(repeatCount) || isNaN(intervalTime) || intervalTime < 1000 || intervalTime > 600000) {
+                alert('请输入有效的循环次数和间隔时间（10秒到600秒之间）');
+                return;
+            }
+
+            currentCount = 0;
+            startButton.disabled = true;
+            stopButton.disabled = false;
+
+            intervalId = setInterval(() => {
+                currentCount++;
+                if (currentCount > repeatCount) {
+                    clearInterval(intervalId);
+                    startButton.disabled = false;
+                    stopButton.disabled = true;
+                    return;
+                }
+                playBeep(currentCount);
+				updateDisplay(currentCount);
+				statusDiv.textContent = `运行中，剩余次数：${repeatCount - currentCount}`;
+            }, intervalTime);
+			
+			updateDisplay(currentCount);
+			statusDiv.textContent = `运行中，剩余次数：${repeatCount - currentCount}`;
+        });
+
+        stopButton.addEventListener('click', () => {
+            clearInterval(intervalId);
+            startButton.disabled = false;
+            stopButton.disabled = true;
+			
+			statusDiv.textContent = `停止`;
+			updateDisplay(0);
+        });
+
+        function updateDisplay(number) {
+            const display = document.getElementById('display');
+            display.textContent = number.toString().padStart(2, '0');
+        }
+		
+        function playBeep(times) {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            for (let i = 0; i < times; i++) {
+                setTimeout(() => {
+                    const oscillator = audioContext.createOscillator();
+                    oscillator.type = 'sine';
+                    oscillator.frequency.setValueAtTime(440, audioContext.currentTime);
+                    oscillator.connect(audioContext.destination);
+                    oscillator.start();
+                    oscillator.stop(audioContext.currentTime + 0.1);
+					const now = new Date();
+					const hours = now.getHours().toString().padStart(2, '0');   // 时
+					const minutes = now.getMinutes().toString().padStart(2, '0'); // 分
+					const seconds = now.getSeconds().toString().padStart(2, '0'); // 秒
+					const milliseconds = now.getMilliseconds().toString().padStart(3, '0'); // 毫秒
+
+					const timeString = `${hours}:${minutes}:${seconds}.${milliseconds}`;
+					console.log(timeString);
+                }, (i+1) * 500);
+            }
+        }
+    </script>
+</body>
+</html>

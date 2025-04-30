@@ -16,6 +16,7 @@
 		.display {
             font-size: 50vw;
             text-align: center;
+			color: gray;			
         }
     </style>
 </head>
@@ -62,11 +63,11 @@
                     return;
                 }
                 playBeep(currentCount);
-				updateDisplay(currentCount);
+				updateDisplay(currentCount, 'black');
 				statusDiv.textContent = `运行中，剩余次数：${repeatCount - currentCount}`;
             }, intervalTime);
 			
-			updateDisplay(currentCount);
+			updateDisplay(currentCount, 'black');
 			statusDiv.textContent = `运行中，剩余次数：${repeatCount - currentCount}`;
         });
 
@@ -76,12 +77,13 @@
             stopButton.disabled = true;
 			
 			statusDiv.textContent = `停止`;
-			updateDisplay(0);
+			updateDisplay(0, 'gray');
         });
 
-        function updateDisplay(number) {
+        function updateDisplay(number, color) {
             const display = document.getElementById('display');
             display.textContent = number.toString().padStart(2, '0');
+			display.style.color = color;
         }
 		
         function playBeep(times) {

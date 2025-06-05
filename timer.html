@@ -1,119 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>秒表</title>
-  <style>
-    body {
-      font-family: Monospace;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* 视口高度 */
-      background-color: #f0f0f0;
-    }
-    .container {
-      text-align: center;
-    }
-    .timer {
-      font-size: 25vw; /* 字体大小为视口宽度的 25% */
-      line-height: 1;
-    }
-    button {
-      font-size: 1.5em;
-      padding: 10px 20px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秒表</title>
+    <style>
+        body {
+            font-family: Monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* 视口高度 */
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .timer {
+            font-size: 25vw;
+            /* 字体大小为视口宽度的 25% */
+            line-height: 1;
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="timer" id="timer">00:00</div>
-    <button id="toggleButton">开始</button>
-  </div>
+    <div class="container">
+        <div class="timer" id="timer">00:00</div>
+        <button id="toggleButton">开始计时</button>
+        <button id="soundButton">每秒提示</button>
+    </div>
 
-  <script>
-    let minutes = 0;
-    let seconds = 0;
-    let timerInterval = null;
-    let isRunning = false;
+    <script>
+        let minutes = 0;
+        let seconds = 0;
+        let timerInterval = null;
+        let isRunning = false;
+        let isSecondsSound = false;
 
-    const timerDisplay = document.getElementById('timer');
-    const toggleButton = document.getElementById('toggleButton');
-    const beepSound = document.getElementById('beepSound'); // 获取音频元素
+        const timerDisplay = document.getElementById('timer');
+        const toggleButton = document.getElementById('toggleButton');
+        const soundButton = document.getElementById('soundButton');
+        const beepSound = document.getElementById('beepSound'); // 获取音频元素
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-    // 更新计时器显示
-    function updateTimerDisplay() {
-      const formattedMinutes = minutes.toString().padStart(2, '0');
-      const formattedSeconds = seconds.toString().padStart(2, '0');
-      timerDisplay.textContent = `${formattedMinutes}:${formattedSeconds}`;
-    }
-
-    // 播放“滴”声
-	function playBeep(times) {
-		const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-		for (let i = 0; i < times; i++) {
-			setTimeout(() => {
-				const oscillator = audioContext.createOscillator();
-				oscillator.type = 'sine';
-				oscillator.frequency.setValueAtTime(440, audioContext.currentTime);
-				oscillator.connect(audioContext.destination);
-				oscillator.start();
-				oscillator.stop(audioContext.currentTime + 0.1);
-				const now = new Date();
-				const hours = now.getHours().toString().padStart(2, '0');   // 时
-				const minutes = now.getMinutes().toString().padStart(2, '0'); // 分
-				const seconds = now.getSeconds().toString().padStart(2, '0'); // 秒
-				const milliseconds = now.getMilliseconds().toString().padStart(3, '0'); // 毫秒
-
-				const timeString = `${hours}:${minutes}:${seconds}.${milliseconds}`;
-				console.log(timeString);
-			}, (i+1) * 500);
-		}
-	}
-
-    // 秒表计时逻辑
-    function startTimer() {
-      timerInterval = setInterval(() => {
-        seconds++;
-        if (seconds === 60) {
-          seconds = 0;
-          minutes++;
-          playBeep(minutes); // 到整分钟时播放“滴”声
+        // 更新计时器显示
+        function updateTimerDisplay() {
+            const formattedMinutes = minutes.toString().padStart(2, '0');
+            const formattedSeconds = seconds.toString().padStart(2, '0');
+            timerDisplay.textContent = `${formattedMinutes}:${formattedSeconds}`;
         }
-        if (minutes === 99 && seconds === 60) {
-          stopTimer(); // 达到最大值时停止计时
+
+        // 播放“滴”声
+        function playBeep(times) {
+            if (isSecondsSound) return; // 每秒提示时不播放
+            for (let i = 0; i < times; i++) {
+                setTimeout(() => {
+                    const oscillator = audioContext.createOscillator();
+                    oscillator.type = 'sine';
+                    oscillator.frequency.setValueAtTime(440, audioContext.currentTime);
+                    oscillator.connect(audioContext.destination);
+                    oscillator.start();
+                    oscillator.stop(audioContext.currentTime + 0.1);
+                    const now = new Date();
+                    const hours = now.getHours().toString().padStart(2, '0');   // 时
+                    const minutes = now.getMinutes().toString().padStart(2, '0'); // 分
+                    const seconds = now.getSeconds().toString().padStart(2, '0'); // 秒
+                    const milliseconds = now.getMilliseconds().toString().padStart(3, '0'); // 毫秒
+
+                    const timeString = `${hours}:${minutes}:${seconds}.${milliseconds}`;
+                }, (i + 1) * 500);
+            }
         }
+
+        // 播放嘀嗒声
+        function playTick(frequency) {
+            if (!isSecondsSound) return; // 每分提示时不播放
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            oscillator.type = 'sine'; // 正弦波
+            oscillator.frequency.value = frequency; // 设置频率
+            gainNode.gain.value = 0.3; // 音量控制
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            oscillator.start();
+            //setTimeout(() => oscillator.stop(), 200); // 播放100ms
+            oscillator.stop(audioContext.currentTime + 0.2);
+        }
+
+        // 秒表计时逻辑
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                seconds++;
+                if (seconds === 60) {
+                    seconds = 0;
+                    minutes++;
+                    playBeep(minutes); // 到整分钟时播放“滴”声
+                }
+                if (minutes === 99 && seconds === 60) {
+                    stopTimer(); // 达到最大值时停止计时计时
+                }
+
+                // 判断奇偶秒并播放声音
+                if (seconds % 2 === 0) {
+                    playTick(880); // 偶数秒播放"嗒"声（880Hz）
+                } else {
+                    playTick(440); // 奇数秒播放"嘀"声（440Hz）
+                }
+
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        // 停止计时计时
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerInterval = null;
+            minutes = 0;
+            seconds = 0;
+        }
+
+        // 开关按钮点击事件
+        toggleButton.addEventListener('click', () => {
+            if (isRunning) {
+                stopTimer();
+                toggleButton.textContent = '开始计时';
+                updateTimerDisplay();
+            } else {
+                startTimer();
+                toggleButton.textContent = '停止计时';
+            }
+            isRunning = !isRunning;
+        });
+
+        // 提示音按钮点击事件
+        soundButton.addEventListener('click', () => {
+            if (isSecondsSound) {
+                soundButton.textContent = '每秒提示';
+            } else {
+                soundButton.textContent = '每分提示';
+            }
+            isSecondsSound = !isSecondsSound;
+        })
+
+        // 初始化显示
         updateTimerDisplay();
-      }, 1000);
-    }
-
-    // 停止计时
-    function stopTimer() {
-      clearInterval(timerInterval);
-      timerInterval = null;
-	  minutes = 0;
-	  seconds = 0;
-    }
-
-    // 开关按钮点击事件
-    toggleButton.addEventListener('click', () => {
-      if (isRunning) {
-        stopTimer();
-        toggleButton.textContent = '开始';
-		updateTimerDisplay();
-      } else {
-        startTimer();
-        toggleButton.textContent = '停止';
-      }
-      isRunning = !isRunning;
-    });
-
-    // 初始化显示
-    updateTimerDisplay();
-  </script>
+    </script>
 </body>
+
 </html>
